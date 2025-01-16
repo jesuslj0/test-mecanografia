@@ -9,25 +9,22 @@
   <body>
     <div id="app">
       <h1 id="title">Test de mecanografía</h1>
-      <div class="test-container">
-        <div id="stats" style="display: flex; justify-content: center;">
+      <div id="test-container">
+        <div id="stats">
           <button id="start-button">Comenzar prueba</button>
           <div id="timer-container">Tiempo
             <div id="timer">00:00:00</div>
           </div>
-          <div id="pulsation-container">PPS
-            <div id="pulsations">00</div>
+          <div id="pulsation-container">PPM
+            <div id="pulsations">0</div>
           </div>
         </div>
-        <div class="quote-container">
-          <p id="autor">Autor: Anónimo</p>
-          <p id="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, deleniti facere iure, unde eaque voluptas recusandae magni, tempora sit ea earum sint accusamus quis nostrum voluptatem molestiae quia. Soluta, amet?</p> 
-        </div>
-        <div class="user-text-container">
-          <input type="text" id="user-text" placeholder="Escriba aquí">
+        <div id="quote-container">
+          <p>Autor: <span id="autor">Anónimo</span></p>
+          <div id="quote">Empieze la prueba para buscar un nuevo texto aleatorio.</textarea> 
         </div>
         <div id="finish" class="hidden">
-          Prueba finalizada!
+          Prueba finalizada. Enhorabuena!
         </div>
       </div>
     </div>

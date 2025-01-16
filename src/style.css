@@ -67,14 +67,73 @@ button {
   }
 }
 
-#user-text {
-  padding: 10px;
+#start-button {
+  background-color: #3a3f9c;
+}
+
+#finish {
+  font-size: 26px;
+  color: #00cd00;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#quote {
+  font-size: 20px;
+  font-family: monospace;
+  text-align: start;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  margin-bottom: 40px;
+}
+
+/* Estilo del cursor */
+.cursor {
+  content: "|";
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: #ccc;
+  animation: blink 1s steps(2, start) infinite;
+  position: absolute;
+}
+
+/* Parpadeo del cursor */
+@keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0.5}
+  50% { opacity: 0; }
+  25% { opacity: 0.5}
+  100% { opacity: 1; }
+}
+
+#stats {
+  display: flex; 
+  justify-content: center;
+  gap: 20px;
+}
+
+#autor {
+  font-size: large;
+  font-style: italic;
+}
+
+#pulsations {
+  font-size: large;
+  font-weight: 700;
+}
+
+#timer {
+  font-size: large;
+  font-weight: 700;
 }
 
 .hidden {
   display: none;
-}
-
-#finish {
-  color: lightgreen;
 }

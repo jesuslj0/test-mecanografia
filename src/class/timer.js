@@ -71,6 +71,11 @@ class Timer {
       }
       return temp;
     }
+
+    getSeconds() {
+      const totalSeconds = this.min * 60 + this.sec + (this.ms/60);
+      return totalSeconds;
+    }
   }
 
 export default Timer;
